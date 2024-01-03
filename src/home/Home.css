@@ -61,9 +61,16 @@
 
 /* --- project tile styles --- */
 .project-tile {
+    background-color: #555555;
+    padding: 20px;
     margin: 20px;
+    transition: 
+        background-color 0.5s;
 }
 
+.project-tile:hover {
+    background-color: #888888;
+}
 
 /* --- img tag styles --- */
 .pixel-img {
