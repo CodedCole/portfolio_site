@@ -4,7 +4,7 @@ import "./ProjectTile.css"
 export default function ProjectTile({ children, projectName, smallIcon, largeIcon }) {
     const [isExpanded, setIsExpanded] = useState(false);
     return (
-        <div className="project-tile">
+        <div className={`project-tile ${isExpanded ? 'is-expanded' : ''}`}>
             <img src={isExpanded ? largeIcon : smallIcon} alt={`${isExpanded ? 'large' : 'small'} ${projectName} logo`} onClick={() => setIsExpanded(!isExpanded)}/>
             <div className={`children ${isExpanded ? 'is-expanded' : ''}`}>
                 {children}
