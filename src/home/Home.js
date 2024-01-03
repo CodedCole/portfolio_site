@@ -1,7 +1,8 @@
 import './Home.css';
 import ProjectTile from '../project-tile/ProjectTile'
 
-import destinyCompareLogo from '../images/DestinyCompareLogo.png'
+import destinyCompareSmallLogo from '../images/DestinyCompareLogo.png'
+import destinyCompareLargeLogo from '../images/DestinyCompareLargeLogo.svg'
 import timeRunnerTitleImage from '../images/TimeRunnerTitle.png'
 import missionGroundHogTitleImage from '../images/MissionGroundHogTitle.png'
 
@@ -50,16 +51,19 @@ export default function Home() {
                 </section>
                 <section className='panel' id='projects-section'>
                     <h2>Projects</h2>
-                    <section className='project-tile'>
-                        <img  src={destinyCompareLogo} alt='Destiny Compare Logo' width="40%"></img>
-                    </section>
-                    <div className='project-tile'>
-                        <img className='pixel-img' src={timeRunnerTitleImage} alt='Time Runner Title' width="80%"></img>
-                    </div>
-                    <div className='project-tile'>
-                        <img className='pixel-img' src={missionGroundHogTitleImage} alt='Mission Ground Hog Title' width="80%"></img>
-                    </div>
+                    <ProjectTile projectName={'Destiny Compare'} smallIcon={destinyCompareSmallLogo} largeIcon={destinyCompareLargeLogo} pixelated={false}>
+                        <p>Child Element</p>
+                        <button>Hello</button>
+                    </ProjectTile>
                     <ProjectTile projectName={'Time Runner'} largeIcon={timeRunnerTitleImage}>
+                        <p>Child Element</p>
+                        <button>Hello</button>
+                    </ProjectTile>
+                    <ProjectTile projectName={'Mission Ground Hog'} largeIcon={missionGroundHogTitleImage}>
+                        <p>Child Element</p>
+                        <button>Hello</button>
+                    </ProjectTile>
+                    <ProjectTile projectName={'Portfolio'} largeIcon={timeRunnerTitleImage}>
                         <p>Child Element</p>
                         <button>Hello</button>
                     </ProjectTile>
