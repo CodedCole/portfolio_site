@@ -1,4 +1,6 @@
 import './Home.css';
+import ProjectTile from '../project-tile/ProjectTile'
+
 import destinyCompareLogo from '../images/DestinyCompareLogo.png'
 import timeRunnerTitleImage from '../images/TimeRunnerTitle.png'
 import missionGroundHogTitleImage from '../images/MissionGroundHogTitle.png'
@@ -8,6 +10,13 @@ export default function Home() {
         <div>
             <section id='welcome-section'>
                 <svg width="100" height="100">
+                    <path
+                        d='M 5 95
+                        a 45 45 0 0 1 90 0'
+                        stroke='#772211'
+                        strokeWidth={4}
+                        fillOpacity={0}
+                    ></path>
                     <circle cx="50" cy="50" r="40" stroke="#ff2211" strokeWidth="4" fillOpacity={0} strokeOpacity={0.5}>
                         <animate
                             attributeName='r'
@@ -41,15 +50,19 @@ export default function Home() {
                 </section>
                 <section className='panel' id='projects-section'>
                     <h2>Projects</h2>
-                    <div className='project-tile'>
+                    <section className='project-tile'>
                         <img  src={destinyCompareLogo} alt='Destiny Compare Logo' width="40%"></img>
-                    </div>
+                    </section>
                     <div className='project-tile'>
                         <img className='pixel-img' src={timeRunnerTitleImage} alt='Time Runner Title' width="80%"></img>
                     </div>
                     <div className='project-tile'>
                         <img className='pixel-img' src={missionGroundHogTitleImage} alt='Mission Ground Hog Title' width="80%"></img>
                     </div>
+                    <ProjectTile projectName={'Time Runner'} largeIcon={timeRunnerTitleImage}>
+                        <p>Child Element</p>
+                        <button>Hello</button>
+                    </ProjectTile>
                     <p>
                         Lipsum quod pro
                     </p>

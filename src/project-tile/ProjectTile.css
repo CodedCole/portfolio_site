@@ -1,0 +1,7 @@
+.children {
+    display: none;
+}
+
+.is-expanded {
+    display: inherit;
+}
