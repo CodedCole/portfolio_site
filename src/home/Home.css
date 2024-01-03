@@ -63,3 +63,22 @@
 .pixel-img {
     image-rendering: pixelated;
 }
+
+/* --- link styles --- */
+.github-link {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    max-width: fit-content;
+
+    color: #FFFFFF;
+    text-decoration: none;
+
+    background-color:#111111;
+    border-radius: 10px;
+}
+
+.github-link img {
+    max-height: 30px;
+    margin-right: 10px;
+}

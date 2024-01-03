@@ -1,6 +1,8 @@
 import './Home.css';
 import ProjectTile from '../project-tile/ProjectTile'
 
+import githubLogo from '../images/github-mark-white.svg'
+
 import destinyCompareSmallLogo from '../images/DestinyCompareLogo.png'
 import destinyCompareLargeLogo from '../images/DestinyCompareLargeLogo.svg'
 import timeRunnerTitleImage from '../images/TimeRunnerTitle.png'
@@ -46,14 +48,17 @@ export default function Home() {
                 <section className='panel' id='about-section'>
                     <h2>About Me</h2>
                     <p>
-                        Lipsum quod pro
+                        Lorem ipsum quod pro
                     </p>
                 </section>
                 <section className='panel' id='projects-section'>
                     <h2>Projects</h2>
                     <ProjectTile projectName={'Destiny Compare'} smallIcon={destinyCompareSmallLogo} largeIcon={destinyCompareLargeLogo} pixelated={false}>
                         <p>Child Element</p>
-                        <button>Hello</button>
+                        <a className='github-link' href="https://github.com/CodedCole/Destiny_Compare" target="_blank">
+                            <img src={githubLogo} alt='GitHub'/>
+                            View GitHub Repo
+                        </a>
                     </ProjectTile>
                     <ProjectTile projectName={'Time Runner'} largeIcon={timeRunnerTitleImage}>
                         <p>Child Element</p>
@@ -68,7 +73,7 @@ export default function Home() {
                         <button>Hello</button>
                     </ProjectTile>
                     <p>
-                        Lipsum quod pro
+                        Lorem ipsum quod pro
                     </p>
                 </section>
             </section>
