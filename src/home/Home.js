@@ -57,13 +57,16 @@ export default function Home() {
                 <section className='panel' id='about-section'>
                     <h2>About Me</h2>
                     <p>
-                        Lorem ipsum quod pro
+                        I am a hard working computer science student at Lipscomb University in Nashville, TN. Learning new skills or topics is one of my favorite things to do.
+                        I dabble in many areas of computing, from machine learning and procedural generation, to graphics and physics simulation. I have also tried worldbuilding,
+                        digital art and animation, sound design, and music composition. My favorite topic that brings all of these together is developing video games. I love to
+                        be creative and solve problems.
                     </p>
                 </section>
                 <section className='panel' id='projects-section'>
                     <h2>Projects</h2>
                     <ProjectTile projectName={'Destiny Compare'} smallIcon={dc_logo_small} largeIcon={dc_logo_large} pixelated={false}>
-                        <div id="dc_goal_section">
+                        <div id='dc_goal_section'>
                             <h3>Goal of the Project</h3>
                             <p>
                                 This project was created for a group project assignment in Introduction to Software Engineering. The goal of the assignment was to learn
@@ -71,7 +74,7 @@ export default function Home() {
                                 is a slightly overscoped product that allows for users to look up basic statistics about players of the video game <cite>Destiny 2</cite>. The
                                 project began at the end of October 2023 and the final product was due at the beginning of December 2023.
                             </p>
-                            <GitHubLink link="https://github.com/CodedCole/Destiny_Compare"/>
+                            <GitHubLink link='https://github.com/CodedCole/Destiny_Compare'/>
                         </div>
                         <div id='dc_requirements_section' className='side-by-side'>
                             <img id='dc_requirements_screenshot' className='screenshot' src={dc_ss_requirements} alt='Jira backlog screenshot' />
@@ -94,7 +97,7 @@ export default function Home() {
                                 </p>
                             </div>
                         </div>
-                        <div id="dc_home_section" className='side-by-side'>
+                        <div id='dc_home_section' className='side-by-side'>
                             <img id='dc_home_screenshot' className='screenshot' src={dc_ss_homeScreen} alt='home screen screenshot' />
                             <div>
                                 <h3>Home Screen</h3>
@@ -114,10 +117,59 @@ export default function Home() {
                         </div>
                     </ProjectTile>
                     <ProjectTile projectName={'Time Runner'} smallIcon={tr_logo_small} largeIcon={tr_logo_large}>
-                        <p>
-                            Child Element
-                        </p>
-                        <GitHubLink link="https://github.com/CodedCole/TimeRunner"/>
+                        <div id='tr_overview_section'>
+                            <h3>Overview</h3>
+                            <p>
+                                Time Runner was sprung from a game jam idea into a whole game and worldbuilding project that will take a while to complete. The idea for the
+                                game is an isometric perspective singleplayer extraction shooter. There are multiple arcologies that have taken a turn for the worse and are
+                                in complete ruin, after the fate virus infected most security and military robots, resulting in a loss of the majority of the citizens of these
+                                arcologies and around the world. The player is a time runner that must use a prototype time machine to gather supplies in the past for the
+                                survivors in the present.
+                                <br/><br/>
+                                The game is currently built using the Unity game engine, but I am currently learning Unreal Engine at school and will be porting the game over
+                                as I have time.
+                            </p>
+                            <GitHubLink link="https://github.com/CodedCole/TimeRunner"/>
+                        </div>
+                        <div>
+                            <h3>How it Began</h3>
+                            <p>
+                                The idea for this game began during a game jam I was unable to take part in due to homework being piled on top of me that week. I don't remember
+                                what the theme for the jam was, but I do remember how attached I got to this game idea. It became my project for the summer of 2023.
+                            </p>
+                        </div>
+                        <div>
+                            <h3>Building a Future Past</h3>
+                            <p>
+                                With an idea stuck in my head, the most stuck an idea has ever been in my head, I had to find some way to start creating. I began looking for
+                                tools to assist in worldbuilding and started to create an entire wiki for Time Runner. I made characters and creatures. I made locations and 
+                                events. I made gadgets and rival coorporations. Yet, I had barely scratched the surface of building a world, but I only had a finite amount of
+                                time to make progress and I had just enough to start creating a game in this world.
+                            </p>
+                        </div>
+                        <div>
+                            <h3>Creating a Game</h3>
+                            <p>
+                                When it comes to the game mechanics, I had them all planned out. There would be inventory management, projectile shooting, quests, and procedural
+                                generation. I would try to use these mechanics and the world I had built to emphasize two things, the cost of short-sighted greed and the benefit 
+                                in helping others.
+                            </p>
+                        </div>
+                        <div>
+                            <h3>Exploration: Wave Function Collapse</h3>
+                            <p>
+                                Implementing all these mechanics was fun, but I knew that there was still a lot I could learn in procedural generation. I found myself down a very
+                                beneficial rabbit trail, making my own version of the 
+                                <a href='https://github.com/mxgmn/WaveFunctionCollapse' target='_blank' rel='noreferrer'> Wave Function Collapse </a>
+                                algorithm.
+                            </p>
+                        </div>
+                        <div>
+                            <h3>Running Out of Time</h3>
+                            <p>
+                                Something neat...
+                            </p>
+                        </div>
                     </ProjectTile>
                     <ProjectTile projectName={'Mission Ground Hog'} smallIcon={mgh_logo_small} largeIcon={mgh_logo_large}>
                         <p>
