@@ -1,12 +1,13 @@
 import './Home.css';
 import ProjectTile from '../project-tile/ProjectTile'
 import GitHubLink from '../github-link/GitHubLink';
-
-import githubLogo from '../images/github-mark-white.svg'
+import ItchLink from '../itch-link/ItchLink';
 
 import destinyCompareSmallLogo from '../images/DestinyCompareLogo.png'
 import destinyCompareLargeLogo from '../images/DestinyCompareLargeLogo.svg'
+import timeRunnerSmallIcon from '../images/TimeRunnerSmallIcon.png'
 import timeRunnerTitleImage from '../images/TimeRunnerTitle.png'
+import missionGroundHogSmallIcon from '../images/MissionGroundHogSmallIcon.png'
 import missionGroundHogTitleImage from '../images/MissionGroundHogTitle.png'
 
 export default function Home() {
@@ -58,17 +59,17 @@ export default function Home() {
                         <p>Child Element</p>
                         <GitHubLink link="https://github.com/CodedCole/Destiny_Compare"/>
                     </ProjectTile>
-                    <ProjectTile projectName={'Time Runner'} largeIcon={timeRunnerTitleImage}>
+                    <ProjectTile projectName={'Time Runner'} smallIcon={timeRunnerSmallIcon} largeIcon={timeRunnerTitleImage}>
                         <p>Child Element</p>
                         <GitHubLink link="https://github.com/CodedCole/TimeRunner"/>
                     </ProjectTile>
-                    <ProjectTile projectName={'Mission Ground Hog'} largeIcon={missionGroundHogTitleImage}>
+                    <ProjectTile projectName={'Mission Ground Hog'} smallIcon={missionGroundHogSmallIcon} largeIcon={missionGroundHogTitleImage}>
                         <p>Child Element</p>
-                        <button>Hello</button>
+                        <ItchLink link="https://codedcole.itch.io/mission-groundhog"/>
                     </ProjectTile>
                     <ProjectTile projectName={'Portfolio'} largeIcon={timeRunnerTitleImage}>
                         <p>Child Element</p>
-                        <button>Hello</button>
+                        <GitHubLink link="https://github.com/CodedCole/portfolio_site"/>
                     </ProjectTile>
                     <p>
                         Lorem ipsum quod pro
