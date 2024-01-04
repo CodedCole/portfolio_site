@@ -54,7 +54,7 @@
 .panel p {
     color: var(--panelTextColor);
     font-size: 18px;
-    text-align: left;
+    text-align: center;
     margin: 8px 0 0 0;
     padding: 10px 25px;
 }
@@ -88,6 +88,9 @@ h3 {
 }
 
 /* --- Destiny Compare Project Styles --- */
+#dc_goal_section .github-link {
+    margin: auto;
+}
 
 /* --- Responsive Design --- */
 @media only screen and (max-width: 1200px) {
