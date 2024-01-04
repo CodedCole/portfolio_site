@@ -1,5 +1,5 @@
 import './GitHubLink.css';
-import githubLogo from '../images/github-mark-white.svg'
+import githubLogo from '../images/logos/github-mark-white.svg'
 
 export default function GitHubLink({ link }) {
     return (

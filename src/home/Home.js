@@ -3,12 +3,16 @@ import ProjectTile from '../project-tile/ProjectTile'
 import GitHubLink from '../github-link/GitHubLink';
 import ItchLink from '../itch-link/ItchLink';
 
-import destinyCompareSmallLogo from '../images/DestinyCompareLogo.png'
-import destinyCompareLargeLogo from '../images/DestinyCompareLargeLogo.svg'
-import timeRunnerSmallIcon from '../images/TimeRunnerSmallIcon.png'
-import timeRunnerTitleImage from '../images/TimeRunnerTitle.png'
-import missionGroundHogSmallIcon from '../images/MissionGroundHogSmallIcon.png'
-import missionGroundHogTitleImage from '../images/MissionGroundHogTitle.png'
+// project logos
+import destinyCompareSmallLogo from '../images/logos/DestinyCompareLogo.png'
+import destinyCompareLargeLogo from '../images/logos/DestinyCompareLargeLogo.svg'
+import timeRunnerSmallIcon from '../images/logos/TimeRunnerSmallIcon.png'
+import timeRunnerTitleImage from '../images/logos/TimeRunnerTitle.png'
+import missionGroundHogSmallIcon from '../images/logos/MissionGroundHogSmallIcon.png'
+import missionGroundHogTitleImage from '../images/logos/MissionGroundHogTitle.png'
+
+// screenshots for Destiny Compare
+import destinyCompare_homeScreen from '../images/screenshots/HomeScreen.png';
 
 export default function Home() {
     return (
@@ -56,24 +60,30 @@ export default function Home() {
                 <section className='panel' id='projects-section'>
                     <h2>Projects</h2>
                     <ProjectTile projectName={'Destiny Compare'} smallIcon={destinyCompareSmallLogo} largeIcon={destinyCompareLargeLogo} pixelated={false}>
-                        <p>Child Element</p>
+                        <p>
+                            <img id='dc_home_screenshot' src={destinyCompare_homeScreen} alt='home screen screenshot' />
+                            Child Element
+                        </p>
                         <GitHubLink link="https://github.com/CodedCole/Destiny_Compare"/>
                     </ProjectTile>
                     <ProjectTile projectName={'Time Runner'} smallIcon={timeRunnerSmallIcon} largeIcon={timeRunnerTitleImage}>
-                        <p>Child Element</p>
+                        <p>
+                            Child Element
+                        </p>
                         <GitHubLink link="https://github.com/CodedCole/TimeRunner"/>
                     </ProjectTile>
                     <ProjectTile projectName={'Mission Ground Hog'} smallIcon={missionGroundHogSmallIcon} largeIcon={missionGroundHogTitleImage}>
-                        <p>Child Element</p>
+                        <p>
+                            Child Element
+                        </p>
                         <ItchLink link="https://codedcole.itch.io/mission-groundhog"/>
                     </ProjectTile>
                     <ProjectTile projectName={'Portfolio'} largeIcon={timeRunnerTitleImage}>
-                        <p>Child Element</p>
+                        <p>
+                            Child Element
+                        </p>
                         <GitHubLink link="https://github.com/CodedCole/portfolio_site"/>
                     </ProjectTile>
-                    <p>
-                        Lorem ipsum quod pro
-                    </p>
                 </section>
             </section>
         </div>

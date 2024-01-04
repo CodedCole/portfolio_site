@@ -1,5 +1,5 @@
 import './ItchLink.css';
-import itchLogo from '../images/itchio-logo-white.svg';
+import itchLogo from '../images/logos/itchio-logo-white.svg';
 
 export default function ItchLink({ link }) {
     return (
