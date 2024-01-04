@@ -63,3 +63,38 @@
 .pixel-img {
     image-rendering: pixelated;
 }
+
+.screenshot {
+    max-width: calc(50% - 20px);
+    padding: 10px;
+}
+
+/* --- general project styles --- */
+h3 {
+    color: var(--panelTextColor);
+    font-size: 2vmin;
+}
+
+.side-by-side {
+    display: flex;
+}
+
+.side-by-side.reverse {
+    flex-direction: row-reverse;
+}
+
+.side-by-side div {
+    min-width: 50%;
+}
+
+/* --- Destiny Compare Project Styles --- */
+
+/* --- Responsive Design --- */
+@media only screen and (max-width: 1200px) {
+    .side-by-side {
+        display: block;
+    }
+    .screenshot {
+        max-width: calc(80% - 20px);
+    }
+}

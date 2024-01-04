@@ -1,24 +1,29 @@
 .children {
     opacity: 0;
-    transition: opacity 0.5s;
+    max-height: 0;
+    overflow: hidden;
+    transition: 
+        opacity 0.5s,
+        max-height 0.5s;
 }
 
 .children.is-expanded {
     opacity: 1;
+    max-height: 80vh;
+    overflow-y: scroll;
 }
 
 .project-tile {
     background-color: #666666;
     padding: 20px;
     margin: 20px;
-    overflow: hidden;
     max-height: 5vh;
     transition: 
         max-height 0.5s;
 }
 
 .project-tile.is-expanded {
-    max-height: 500px;
+    max-height: 90vh;
 }
 
 .project-icon {

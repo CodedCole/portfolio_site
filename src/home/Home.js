@@ -4,15 +4,18 @@ import GitHubLink from '../github-link/GitHubLink';
 import ItchLink from '../itch-link/ItchLink';
 
 // project logos
-import destinyCompareSmallLogo from '../images/logos/DestinyCompareLogo.png'
-import destinyCompareLargeLogo from '../images/logos/DestinyCompareLargeLogo.svg'
-import timeRunnerSmallIcon from '../images/logos/TimeRunnerSmallIcon.png'
-import timeRunnerTitleImage from '../images/logos/TimeRunnerTitle.png'
-import missionGroundHogSmallIcon from '../images/logos/MissionGroundHogSmallIcon.png'
-import missionGroundHogTitleImage from '../images/logos/MissionGroundHogTitle.png'
+import dc_logo_small from '../images/logos/DestinyCompareLogo.png'
+import dc_logo_large from '../images/logos/DestinyCompareLargeLogo.svg'
+import tr_logo_small from '../images/logos/TimeRunnerSmallIcon.png'
+import tr_logo_large from '../images/logos/TimeRunnerTitle.png'
+import mgh_logo_small from '../images/logos/MissionGroundHogSmallIcon.png'
+import mgh_logo_large from '../images/logos/MissionGroundHogTitle.png'
 
 // screenshots for Destiny Compare
-import destinyCompare_homeScreen from '../images/screenshots/HomeScreen.png';
+import dc_ss_requirements from '../images/screenshots/Requirements.png';
+import dc_ss_design from '../images/screenshots/Design.png';
+import dc_ss_homeScreen from '../images/screenshots/HomeScreen.png';
+import dc_ss_compareScreen from '../images/screenshots/ComparePage.png';
 
 export default function Home() {
     return (
@@ -59,26 +62,66 @@ export default function Home() {
                 </section>
                 <section className='panel' id='projects-section'>
                     <h2>Projects</h2>
-                    <ProjectTile projectName={'Destiny Compare'} smallIcon={destinyCompareSmallLogo} largeIcon={destinyCompareLargeLogo} pixelated={false}>
-                        <p>
-                            <img id='dc_home_screenshot' src={destinyCompare_homeScreen} alt='home screen screenshot' />
-                            Child Element
-                        </p>
+                    <ProjectTile projectName={'Destiny Compare'} smallIcon={dc_logo_small} largeIcon={dc_logo_large} pixelated={false}>
+                        <div id="dc_goal_section">
+                            <h3>Goal of the Project</h3>
+                            <p>
+                                This project was a created for a group project assignment in Introduction to Software Engineering. The goal of the assignment was to learn
+                                how real software projects are completed, starting in the requirements phase through implementation and release. The end result of the semester
+                                is a slightly overscoped product that allows for users to look up basic statistics about players of the video game Destiny 2. 
+                            </p>
+                        </div>
+                        <div id='dc_requirements_section' className='side-by-side'>
+                            <img id='dc_requirements_screenshot' className='screenshot' src={dc_ss_requirements} alt='Jira backlog screenshot' />
+                            <div>
+                                <h3>Requirements</h3>
+                                <p>
+                                    Child Element
+                                </p>
+                            </div>
+                        </div>
+                        <div id='dc_design_section' className='side-by-side reverse'>
+                            <img id='dc_design_screenshot' className='screenshot' src={dc_ss_design} alt='Figma UI design screenshot' />
+                            <div>
+                                <h3>Design</h3>
+                                <p>
+                                    Child Element
+                                </p>
+                            </div>
+                        </div>
+                        <div id="dc_home_section" className='side-by-side'>
+                            <img id='dc_home_screenshot' className='screenshot' src={dc_ss_homeScreen} alt='home screen screenshot' />
+                            <div>
+                                <h3>Home Screen</h3>
+                                <p>
+                                    Child Element
+                                </p>
+                            </div>
+                        </div>
+                        <div id='dc_compare_section' className='side-by-side reverse'>
+                            <img id='dc_compare_screenshot' className='screenshot' src={dc_ss_compareScreen} alt='compare screen screenshot' />
+                            <div>
+                                <h3>Compare Screen</h3>
+                                <p>
+                                    Child Element
+                                </p>
+                            </div>
+                        </div>
                         <GitHubLink link="https://github.com/CodedCole/Destiny_Compare"/>
                     </ProjectTile>
-                    <ProjectTile projectName={'Time Runner'} smallIcon={timeRunnerSmallIcon} largeIcon={timeRunnerTitleImage}>
+                    <ProjectTile projectName={'Time Runner'} smallIcon={tr_logo_small} largeIcon={tr_logo_large}>
                         <p>
                             Child Element
                         </p>
                         <GitHubLink link="https://github.com/CodedCole/TimeRunner"/>
                     </ProjectTile>
-                    <ProjectTile projectName={'Mission Ground Hog'} smallIcon={missionGroundHogSmallIcon} largeIcon={missionGroundHogTitleImage}>
+                    <ProjectTile projectName={'Mission Ground Hog'} smallIcon={mgh_logo_small} largeIcon={mgh_logo_large}>
                         <p>
                             Child Element
                         </p>
                         <ItchLink link="https://codedcole.itch.io/mission-groundhog"/>
                     </ProjectTile>
-                    <ProjectTile projectName={'Portfolio'} largeIcon={timeRunnerTitleImage}>
+                    <ProjectTile projectName={'Portfolio'} largeIcon={tr_logo_large}>
                         <p>
                             Child Element
                         </p>
