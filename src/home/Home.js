@@ -1,5 +1,6 @@
 import './Home.css';
 import ProjectTile from '../project-tile/ProjectTile'
+import GitHubLink from '../github-link/GitHubLink';
 
 import githubLogo from '../images/github-mark-white.svg'
 
@@ -55,14 +56,11 @@ export default function Home() {
                     <h2>Projects</h2>
                     <ProjectTile projectName={'Destiny Compare'} smallIcon={destinyCompareSmallLogo} largeIcon={destinyCompareLargeLogo} pixelated={false}>
                         <p>Child Element</p>
-                        <a className='github-link' href="https://github.com/CodedCole/Destiny_Compare" target="_blank">
-                            <img src={githubLogo} alt='GitHub'/>
-                            View GitHub Repo
-                        </a>
+                        <GitHubLink link="https://github.com/CodedCole/Destiny_Compare"/>
                     </ProjectTile>
                     <ProjectTile projectName={'Time Runner'} largeIcon={timeRunnerTitleImage}>
                         <p>Child Element</p>
-                        <button>Hello</button>
+                        <GitHubLink link="https://github.com/CodedCole/TimeRunner"/>
                     </ProjectTile>
                     <ProjectTile projectName={'Mission Ground Hog'} largeIcon={missionGroundHogTitleImage}>
                         <p>Child Element</p>

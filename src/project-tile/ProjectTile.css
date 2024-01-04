@@ -21,7 +21,7 @@
     max-height: 200px;
 }
 
-.project-tile img:not([alt="GitHub"]) {
+.project-icon {
     min-width: 100%;
     max-height: 5vh;
     object-fit: contain;
@@ -29,6 +29,6 @@
         background-color 0.5s;
 }
 
-.project-tile img:hover:not([alt="GitHub"]) {
+.project-icon:hover {
     background-color: #888888;
 }
