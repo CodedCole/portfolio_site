@@ -94,18 +94,25 @@ export default function Home() {
                         <div id='dc_home_section' className='side-by-side'>
                             <img id='dc_home_screenshot' className='screenshot' src={dc_ss_homeScreen} alt='home screen screenshot' />
                             <div>
-                                <h3>Home Screen</h3>
+                                <h3>Implementation</h3>
                                 <p>
-                                    Child Element
+                                    The bulk of the implementation phase was taken by trying to match the html and css to our UI design in Figma. My part of this phase
+                                    included gathering all the data we wanted from Bungie.net and handing it over to my teammates on the front end in a more useable
+                                    state. Essentially matching stat ID hashes and letting the front end get a stat through just its name. However, some clever renaming
+                                    had to be done, so that there was no confusion between what stats of the same name actually refer to. (ie. final blows PvP vs final 
+                                    blows PvE)
                                 </p>
                             </div>
                         </div>
                         <div id='dc_compare_section' className='side-by-side reverse'>
                             <img id='dc_compare_screenshot' className='screenshot' src={dc_ss_compareScreen} alt='compare screen screenshot' />
                             <div>
-                                <h3>Compare Screen</h3>
+                                <h3>Presentation</h3>
                                 <p>
-                                    Child Element
+                                    At the end of the semester, our team had to present what we had achieved in a little less than a month. We showcased Destiny Compare
+                                    and its ability to retrieve stats for a player that the user searched for. We didn't achieve the compare part of Destiny Compare, but
+                                    we weren't far from getting that completed. Anychart's free version apparently has limitations on how it can be styled and couldn't
+                                    be put side by side.
                                 </p>
                             </div>
                         </div>
