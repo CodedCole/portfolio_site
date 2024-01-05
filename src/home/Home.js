@@ -160,22 +160,37 @@ export default function Home() {
                             <p>
                                 Implementing all these mechanics was fun, but I knew that there was still a lot I could learn in procedural generation. I found myself down a very
                                 beneficial rabbit trail, making my own version of the 
-                                <a href='https://github.com/mxgmn/WaveFunctionCollapse' target='_blank' rel='noreferrer'> Wave Function Collapse </a>
-                                algorithm.
+                                <a href='https://github.com/mxgmn/WaveFunctionCollapse' target='_blank' rel='noreferrer' className='in-text-link'> Wave Function Collapse </a>
+                                algorithm. With this new tool, I was able to combine it with a map generator, which I had already built. My map generator laid the foundation and
+                                set parameters for the structure of the level and WFC was used to decorate and tweak it. An interesting side effect of using WFC to decorate the
+                                level is that extra attention is given to the level's tilesets and how they transition from one to the other. Also to speed up the process of WFC,
+                                I split the level into rooms, which would each be decorated by WFC one at a time. This let WFC get a collision and reset without needing to redo
+                                the entire level.
                             </p>
                         </div>
                         <div>
                             <h3>Running Out of Time</h3>
                             <p>
-                                Something neat...
+                                With the summer coming to a close, It was time to get the project in a state where I could be proud of the work that I did, and be able to come
+                                back to it later as I have time between school, homework, and friends. Bugs were fixed, placeholder art was replaced, sound effects were added, and
+                                polish was added about every part of the game that was close to done. At the end of the summer, there was a fully implemented system for procedural
+                                generation, inventory management, some cool shaders built with Unity's Shader Graph, and the core gameplay loop, with entering a level and extracting
+                                loot.
                             </p>
                         </div>
                     </ProjectTile>
-                    <ProjectTile projectName={'Mission Ground Hog'} smallIcon={mgh_logo_small} largeIcon={mgh_logo_large}>
-                        <p>
-                            Child Element
-                        </p>
-                        <ItchLink link="https://codedcole.itch.io/mission-groundhog"/>
+                    <ProjectTile projectName={'Mission Groundhog'} smallIcon={mgh_logo_small} largeIcon={mgh_logo_large}>
+                        <div id='mgh_overview_section'>
+                            <h3>Overview</h3>
+                            <p>
+                                Mission Groundhog was developed in one week for the Brackeys 2020.2 game jam. While being a quickly put together and small project, it is still one
+                                that I am very proud of, because it challenged me to stay on schedule and not to overscope the project. I completed it in time with all the mechanics
+                                and content I wanted.
+                                <br/><br/>
+                                It was then submitted to the game jam through Itch.io
+                            </p>
+                            <ItchLink link="https://codedcole.itch.io/mission-groundhog"/>
+                        </div>
                     </ProjectTile>
                     <ProjectTile projectName={'Portfolio'} largeIcon={tr_logo_large}>
                         <p>
