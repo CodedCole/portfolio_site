@@ -146,8 +146,8 @@ export default function Home() {
                         <div>
                             <h3>How it Began</h3>
                             <p>
-                                The idea for this game began during a game jam I was unable to take part in due to homework being piled on top of me that week. I don't remember
-                                what the theme for the jam was, but I do remember how attached I got to this game idea. It became my project for the summer of 2023.
+                                The idea for this game began during a game jam I was unable to take part in due to homework being piled on top of me that week. The theme for the
+                                jam was 'An end is a new beginning' and immediately this game idea came to mind. It became my project for the summer of 2023.
                             </p>
                         </div>
                         <div>
@@ -162,16 +162,34 @@ export default function Home() {
                         <div>
                             <h3>Creating a Game</h3>
                             <p>
-                                When it comes to the game mechanics, I had them all planned out. There would be inventory management, projectile shooting, quests, and procedural
-                                generation. I would try to use these mechanics and the world I had built to emphasize two things, the cost of short-sighted greed and the benefit 
-                                in helping others.
+                                When it came to the game mechanics, I had them all planned out. There would be inventory management, projectile shooting, quests, and procedural
+                                generation. I tried to design all these with wanting the best way to play the game to be on a controller. There is still support for keyboard and
+                                mouse though. The most time consuming mechanics were inventory management and procedural generation.
+                            </p>
+                            <h4>Inventory</h4>
+                            <p>
+                                Inventories are fairly straight forward. There are some items that the player needs to bring on there adventure, but there is only so much room. Some 
+                                of these items are single use consumables, like bandages, while others have durability damaged with use, like a rifle. There is also armor the player 
+                                should wear, but the heavier the armor, the slower they will be. Getting items and putting them in the inventory was the easy part. The hard part 
+                                came when needing to let the UI know where items were and let the player move these items to gear slots and to and from crates. Also trying to keep 
+                                the inventory decoupled from most of the other components was quite difficult, especially if the non-playable characters are going to use the same 
+                                health, movement, and weapon components.
+                            </p>
+                            <h4>Procedural Generation</h4>
+                            <p>
+                                The other time consuming mechanic was procedural generation. Generating an arcology is almost like generating a city, but there are some distinct
+                                features of an arcology (at least the ones I have in mind for Time Runner) that make them quite different. There is no need to worry about how the
+                                terrain will affect the layout, but the layout also must be consistent between levels. It is also a single construction, thus it needs to feel uniform,
+                                but it should have variety between the different rooms and 'sub-buildings'. I decided to draw templates for how each level of the arcology should be
+                                laid out and have seperate generators for each zone in the layout. These generators would determine where doors would be and setup parameters for the
+                                new procedural generation algorithm I found while researching ways to generate buildings.
                             </p>
                         </div>
                         <div>
                             <h3>Exploration: Wave Function Collapse</h3>
                             <p>
-                                Implementing all these mechanics was fun, but I knew that there was still a lot I could learn in procedural generation. I found myself down a very
-                                beneficial rabbit trail, making my own version of the 
+                                I knew that there was still a lot I could learn in procedural generation. I found myself down a very beneficial rabbit trail, making my own version 
+                                of the 
                                 <a href='https://github.com/mxgmn/WaveFunctionCollapse' target='_blank' rel='noreferrer' className='in-text-link'> Wave Function Collapse </a>
                                 algorithm. With this new tool, I was able to combine it with a map generator, which I had already built. My map generator laid the foundation and
                                 set parameters for the structure of the level and WFC was used to decorate and tweak it. An interesting side effect of using WFC to decorate the
