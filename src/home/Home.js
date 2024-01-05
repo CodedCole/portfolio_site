@@ -23,8 +23,10 @@ export default function Home() {
             <section id='welcome-section'>
                 <svg width="100" height="100">
                     <path
-                        d='M 5 95
-                        a 45 45 0 0 1 90 0'
+                        d='M 5 105
+                        l 0 -10
+                        a 45 45 0 0 1 90 0
+                        l 0 10'
                         stroke='#772211'
                         strokeWidth={4}
                         fillOpacity={0}
@@ -32,15 +34,22 @@ export default function Home() {
                     <circle r="40" stroke="#ff2211" strokeWidth="4" fillOpacity={0} strokeOpacity={0.5}>
                         <animate
                             attributeName='r'
-                            values='20;40;20'
-                            dur='5s'
+                            values='0;40;0'
+                            calcMode='spline'
+                            keySplines='
+                                .52 0 .8 1
+                                .2 0 .48 1'
+                            dur='10s'
                             repeatCount='indefinite'
                         />
                         <animateMotion
                             dur='10s'
                             repeatCount='indefinite'
-                            path='M 5 95
-                            a 45 45 0 0 1 90 0'
+                            path='M 5 105
+                                l 0 -10
+                                a 45 45 0 0 1 90 0
+                                l 0 10
+                                '
                         />
                     </circle>
                 </svg>
