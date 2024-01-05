@@ -87,7 +87,9 @@ export default function Home() {
                             <div>
                                 <h3>Design</h3>
                                 <p>
-                                    In the design phase of the project we put together multiple UI ideas and discussed how we would achieve certain functionality.
+                                    In the design phase of the project we put together multiple UI ideas using Figma and discussed how we would achieve certain functionality.
+                                    We decided that a simple home page and splitting the stats page into sections was the best route for UI. For functionality, a wrapper for
+                                    Bungie.net would need to be made, so that there was less clutter in the front end and that the API was easier to use.
                                 </p>
                             </div>
                         </div>

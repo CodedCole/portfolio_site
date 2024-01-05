@@ -81,6 +81,7 @@
 h3 {
     color: var(--panelTextColor);
     font-size: 2vmin;
+    margin: 1vmin 0;
 }
 
 .side-by-side {
@@ -93,6 +94,7 @@ h3 {
 
 .side-by-side div {
     min-width: 50%;
+    margin: auto 0;
 }
 
 .github-link, .itch-link {
