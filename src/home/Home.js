@@ -14,7 +14,7 @@ import mgh_logo_large from '../images/logos/MissionGroundHogTitle.png'
 // screenshots for Destiny Compare
 import dc_ss_requirements from '../images/screenshots/Requirements.png';
 import dc_ss_design from '../images/screenshots/Design.png';
-import dc_ss_homeScreen from '../images/screenshots/HomeScreen.png';
+import dc_ss_implementation from '../images/screenshots/implementation.png';
 import dc_ss_compareScreen from '../images/screenshots/ComparePage.png';
 
 export default function Home() {
@@ -92,7 +92,7 @@ export default function Home() {
                             </div>
                         </div>
                         <div id='dc_home_section' className='side-by-side'>
-                            <img id='dc_home_screenshot' className='screenshot' src={dc_ss_homeScreen} alt='home screen screenshot' />
+                            <img id='dc_implementation_screenshot' className='screenshot' src={dc_ss_implementation} alt='VS Code screenshot of my Bungie.net Wrapper' />
                             <div>
                                 <h3>Implementation</h3>
                                 <p>
