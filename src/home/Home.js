@@ -29,24 +29,18 @@ export default function Home() {
                         strokeWidth={4}
                         fillOpacity={0}
                     ></path>
-                    <circle cx="50" cy="50" r="40" stroke="#ff2211" strokeWidth="4" fillOpacity={0} strokeOpacity={0.5}>
+                    <circle r="40" stroke="#ff2211" strokeWidth="4" fillOpacity={0} strokeOpacity={0.5}>
                         <animate
                             attributeName='r'
                             values='20;40;20'
                             dur='5s'
                             repeatCount='indefinite'
                         />
-                        <animate
-                            attributeName='cx'
-                            values='30;70;30'
+                        <animateMotion
                             dur='10s'
                             repeatCount='indefinite'
-                        />
-                        <animate
-                            attributeName='cy'
-                            values='70;50;70'
-                            dur='5s'
-                            repeatCount='indefinite'
+                            path='M 5 95
+                            a 45 45 0 0 1 90 0'
                         />
                     </circle>
                 </svg>
