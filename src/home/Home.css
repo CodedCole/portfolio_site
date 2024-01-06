@@ -55,7 +55,7 @@
     margin: 0;
 }
 
-.panel p {
+p {
     color: var(--panelTextColor);
     font-size: 18px;
     text-align: center;

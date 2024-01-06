@@ -13,8 +13,17 @@
     transition: background-color 0.5s;
 }
 
+.light {
+    background-color:#CCCCCC;
+    color:#111111;
+}
+
 .github-link:hover {
     background-color: #888888;
+}
+
+.github-link.light:hover {
+    background-color: #FFFFFF;
 }
 
 .github-icon {

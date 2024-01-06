@@ -160,25 +160,18 @@ export default function Home() {
                             <p>
                                 When it came to the game mechanics, I had them all planned out. There would be inventory management, projectile shooting, quests, and procedural
                                 generation. I tried to design all these for a game controller, while still supporting keyboard and mouse. 
-                                The most time consuming mechanics were inventory management and procedural generation.
+                                I wanted the game to have a rogue-like feel, so it needs some procedurally generated arcologies for the player to explore. For those who don't know, an
+                                arcology is a single building holding the population of a city and is self-sufficient, thus it needs no help from the outside world. Everything from power
+                                to food production is handled within the building. 
                             </p>
-                            <h4>Inventory</h4>
                             <p>
-                                Inventories are fairly straight forward. There are some items that the player needs to bring on there adventure, but there is only so much room. Some
-                                of these items are single use consumables, like bandages, while others have durability damaged with use, like a rifle. There is also armor the player
-                                should wear, but the heavier the armor, the slower they will be. Getting items and putting them in the inventory was the easy part. The hard part
-                                came when needing to let the UI know where items were and let the player move these items to gear slots and to and from crates. Also trying to keep
-                                the inventory decoupled from most of the other components was quite difficult, especially if the non-playable characters are going to use the same
-                                health, movement, and weapon components.
-                            </p>
-                            <h4>Procedural Generation</h4>
-                            <p>
-                                The other time consuming mechanic was procedural generation. Generating an arcology is almost like generating a city, but there are some distinct
+                                Generating an arcology is almost like generating a city, but there are some distinct
                                 features of an arcology (at least the ones I have in mind for Time Runner) that make them quite different. There is no need to worry about how the
-                                terrain will affect the layout, but the layout also must be consistent between levels. It is also a single construction, thus it needs to feel uniform,
-                                but it should have variety between the different rooms and 'sub-buildings'. I decided to draw templates for how each level of the arcology should be
+                                terrain because it is an indoor environment, but the layout also must be consistent between levels. 
+                                Each of the rooms and 'sub-buildings' should have variety, but they should feel like they were meant to be together since the arcology is a single construction.
+                                I decided to draw templates for how each level of the arcology should be
                                 laid out and have seperate generators for each zone in the layout. These generators would determine where doors would be and setup parameters for the
-                                new procedural generation algorithm I found while researching ways to generate buildings.
+                                algorithm below.
                             </p>
                         </div>
                         <div>
@@ -187,21 +180,20 @@ export default function Home() {
                                 I knew that there was still a lot I could learn in procedural generation. I found myself down a very beneficial rabbit trail, making my own version
                                 of the
                                 <a href='https://github.com/mxgmn/WaveFunctionCollapse' target='_blank' rel='noreferrer' className='in-text-link'> Wave Function Collapse </a>
-                                algorithm. With this new tool, I was able to combine it with a map generator, which I had already built. My map generator laid the foundation and
+                                algorithm. I was able to combine WFC with my level generator above. The level generator laid the foundation and
                                 set parameters for the structure of the level and WFC was used to decorate and tweak it. An interesting side effect of using WFC to decorate the
-                                level is that extra attention is given to the level's tilesets and how they transition from one to the other. Also to speed up the process of WFC,
-                                I split the level into rooms, which would each be decorated by WFC one at a time. This let WFC get a collision and reset without needing to redo
-                                the entire level.
+                                level is that extra attention is needed while designing a level's tilesets and how they transition from one to the other. Depending on the tileset, WFC can reach states
+                                where it gets stuck because there is no possible solution for how it collapsed. When this happens, WFC needs to be restarted. To minimize the impact
+                                of restarts during generation, I split the level into zones. Each is decorated by WFC individually, so a restart only affects a single zone.
                             </p>
                         </div>
                         <div>
-                            <h3>Running Out of Time</h3>
+                            <h3>End of the Summer</h3>
                             <p>
-                                With the summer coming to a close, It was time to get the project in a state where I could be proud of the work that I did, and be able to come
+                                With the summer coming to a close, it was time to get the project in a state where it was more polished and I could come
                                 back to it later as I have time between school, homework, and friends. Bugs were fixed, placeholder art was replaced, sound effects were added, and
-                                polish was added about every part of the game that was close to done. At the end of the summer, there was a fully implemented system for procedural
-                                generation, inventory management, some cool shaders built with Unity's Shader Graph, and the core gameplay loop, with entering a level and extracting
-                                loot.
+                                polish was added to all the existing elements of the game. At the end of the summer, there was a fully implemented system for procedural
+                                generation, inventory management, some cool shaders built with Unity's Shader Graph, and the core gameplay loop.
                             </p>
                         </div>
                     </ProjectTile>
@@ -218,13 +210,11 @@ export default function Home() {
                             <ItchLink link="https://codedcole.itch.io/mission-groundhog" />
                         </div>
                     </ProjectTile>
-                    <ProjectTile projectName={'Portfolio'} largeIcon={tr_logo_large}>
-                        <p>
-                            Child Element
-                        </p>
-                        <GitHubLink link="https://github.com/CodedCole/portfolio_site" />
-                    </ProjectTile>
                 </section>
+                <p>
+                    Link to portfolio repo
+                </p>
+                <GitHubLink link="https://github.com/CodedCole/portfolio_site" light='true'/>
             </section>
         </div>
     );
