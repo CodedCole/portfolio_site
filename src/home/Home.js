@@ -77,17 +77,16 @@ export default function Home() {
                                 is a slightly overscoped product that allows for users to look up basic statistics about players of the video game <cite>Destiny 2</cite>. The
                                 project began at the end of October 2023 and the final product was due at the beginning of December 2023.
                             </p>
-                            <GitHubLink link='https://github.com/CodedCole/Destiny_Compare'/>
+                            <GitHubLink link='https://github.com/CodedCole/Destiny_Compare' />
                         </div>
                         <div id='dc_requirements_section' className='side-by-side'>
                             <img id='dc_requirements_screenshot' className='screenshot' src={dc_ss_requirements} alt='Jira backlog screenshot' />
                             <div>
                                 <h3>Requirements</h3>
                                 <p>
-                                    Deciding what our project would be and what to do for it was the more difficult parts of this assignment, since it was a very open ended
-                                    assignment. We settled on making a stat tracker for a video game. I made the executive decision to use the Bungie.net API to make a
-                                    <cite>Destiny 2</cite> stat tracker, because no one else was sure what API to use and I know that the Bungie.net API has lots of 
-                                    documentation, also I actually play the game. A Jira backlog was filled in with what we wanted the tracker to do.
+                                    Deciding what our project would be was one of the more difficult parts of this assignment, since the professor's guidelines were very open
+                                    ended. We settled on making a stat tracker for<cite> Destiny 2</cite>. I recommended this to the team because I knew that the Bungie.net API 
+                                    has comprehensive documentation and I enjoy playing the game. A Jira backlog was filled in with what we wanted the tracker to do.
                                 </p>
                             </div>
                         </div>
@@ -98,7 +97,7 @@ export default function Home() {
                                 <p>
                                     In the design phase of the project we put together multiple UI ideas using Figma and discussed how we would achieve certain functionality.
                                     We decided that a simple home page and splitting the stats page into sections was the best route for UI. For functionality, a wrapper for
-                                    Bungie.net would need to be made, so that there was less clutter in the front end and that the API was easier to use.
+                                    Bungie.net would need to be made, so that the API was easier to use and that there was less clutter in the front end logic.
                                 </p>
                             </div>
                         </div>
@@ -107,11 +106,9 @@ export default function Home() {
                             <div>
                                 <h3>Implementation</h3>
                                 <p>
-                                    The bulk of the implementation phase was taken by trying to match the html and css to our UI design in Figma. My part of this phase
-                                    included gathering all the data we wanted from Bungie.net and handing it over to my teammates on the front end in a more useable
-                                    state. Essentially matching stat ID hashes and letting the front end get a stat through just its name. However, some clever renaming
-                                    had to be done, so that there was no confusion between what stats of the same name actually refer to. (ie. final blows PvP vs final 
-                                    blows PvE)
+                                    The implementation consisted of three main parts, the front end visuals, the front end logic, and the Bungie.net API wrapper.
+                                    My part of this phase was making some of the home page UI and creating the wrapper for Bungie.net. 
+                                    The wrapper was built to send requests on behalf of the front end and repackage API responses into a form that was easier for the front end to use.
                                 </p>
                             </div>
                         </div>
@@ -121,9 +118,8 @@ export default function Home() {
                                 <h3>Presentation</h3>
                                 <p>
                                     At the end of the semester, our team had to present what we had achieved in a little less than a month. We showcased Destiny Compare
-                                    and its ability to retrieve stats for a player that the user searched for. We didn't achieve the compare part of Destiny Compare, but
-                                    we weren't far from getting that completed. Anychart's free version apparently has limitations on how it can be styled and couldn't
-                                    be put side by side.
+                                    and its ability to retrieve stats for a player that the user searched for. We didn't complete the compare part of Destiny Compare in the time we
+                                    had, but we weren't far from getting that working.
                                 </p>
                             </div>
                         </div>
@@ -137,42 +133,42 @@ export default function Home() {
                                 in complete ruin, after the fate virus infected most security and military robots, resulting in a loss of the majority of the citizens of these
                                 arcologies and around the world. The player is a time runner that must use a prototype time machine to gather supplies in the past for the
                                 survivors in the present.
-                                <br/><br/>
+                                <br /><br />
                                 The game is currently built using the Unity game engine, but I am currently learning Unreal Engine at school and will be porting the game over
                                 as I have time.
                             </p>
-                            <GitHubLink link="https://github.com/CodedCole/TimeRunner"/>
+                            <GitHubLink link="https://github.com/CodedCole/TimeRunner" />
                         </div>
                         <div>
                             <h3>How it Began</h3>
                             <p>
-                                The idea for this game began during a game jam I was unable to take part in due to homework being piled on top of me that week. The theme for the
-                                jam was 'An end is a new beginning' and immediately this game idea came to mind. It became my project for the summer of 2023.
+                                The idea for this game began during Brackeys Game Jam, whose theme was 'An end is a new beginning'. Though unable to participate due to schoolwork
+                                that week, it inspired me to make this game. So instead of being a game jam game, it became my project for the summer of 2023.
                             </p>
                         </div>
                         <div>
                             <h3>Building a Future Past</h3>
                             <p>
-                                With an idea stuck in my head, the most stuck an idea has ever been in my head, I had to find some way to start creating. I began looking for
-                                tools to assist in worldbuilding and started to create an entire wiki for Time Runner. I made characters and creatures. I made locations and 
-                                events. I made gadgets and rival coorporations. Yet, I had barely scratched the surface of building a world, but I only had a finite amount of
-                                time to make progress and I had just enough to start creating a game in this world.
+                                With an idea stuck in my head, the most stuck an idea has ever been in my head, I had to find some way to start creating. I began using a worldbuilding
+                                tool and started to create the story for Time Runner. I made characters and creatures. I made cities and histories. I made rival coorporations along with
+                                their gadgets and inventions. I made a time travel theory for the scientists to discover. Yet, I had barely scratched the surface of building this world. 
+                                I had just enough to put a player into it.
                             </p>
                         </div>
                         <div>
                             <h3>Creating a Game</h3>
                             <p>
                                 When it came to the game mechanics, I had them all planned out. There would be inventory management, projectile shooting, quests, and procedural
-                                generation. I tried to design all these with wanting the best way to play the game to be on a controller. There is still support for keyboard and
-                                mouse though. The most time consuming mechanics were inventory management and procedural generation.
+                                generation. I tried to design all these for a game controller, while still supporting keyboard and mouse. 
+                                The most time consuming mechanics were inventory management and procedural generation.
                             </p>
                             <h4>Inventory</h4>
                             <p>
-                                Inventories are fairly straight forward. There are some items that the player needs to bring on there adventure, but there is only so much room. Some 
-                                of these items are single use consumables, like bandages, while others have durability damaged with use, like a rifle. There is also armor the player 
-                                should wear, but the heavier the armor, the slower they will be. Getting items and putting them in the inventory was the easy part. The hard part 
-                                came when needing to let the UI know where items were and let the player move these items to gear slots and to and from crates. Also trying to keep 
-                                the inventory decoupled from most of the other components was quite difficult, especially if the non-playable characters are going to use the same 
+                                Inventories are fairly straight forward. There are some items that the player needs to bring on there adventure, but there is only so much room. Some
+                                of these items are single use consumables, like bandages, while others have durability damaged with use, like a rifle. There is also armor the player
+                                should wear, but the heavier the armor, the slower they will be. Getting items and putting them in the inventory was the easy part. The hard part
+                                came when needing to let the UI know where items were and let the player move these items to gear slots and to and from crates. Also trying to keep
+                                the inventory decoupled from most of the other components was quite difficult, especially if the non-playable characters are going to use the same
                                 health, movement, and weapon components.
                             </p>
                             <h4>Procedural Generation</h4>
@@ -188,8 +184,8 @@ export default function Home() {
                         <div>
                             <h3>Exploration: Wave Function Collapse</h3>
                             <p>
-                                I knew that there was still a lot I could learn in procedural generation. I found myself down a very beneficial rabbit trail, making my own version 
-                                of the 
+                                I knew that there was still a lot I could learn in procedural generation. I found myself down a very beneficial rabbit trail, making my own version
+                                of the
                                 <a href='https://github.com/mxgmn/WaveFunctionCollapse' target='_blank' rel='noreferrer' className='in-text-link'> Wave Function Collapse </a>
                                 algorithm. With this new tool, I was able to combine it with a map generator, which I had already built. My map generator laid the foundation and
                                 set parameters for the structure of the level and WFC was used to decorate and tweak it. An interesting side effect of using WFC to decorate the
@@ -216,17 +212,17 @@ export default function Home() {
                                 Mission Groundhog was developed in one week for the Brackeys 2020.2 game jam. While being a quickly put together and small project, it is still one
                                 that I am very proud of, because it challenged me to stay on schedule and not to overscope the project. I completed it in time with all the mechanics
                                 and content I wanted.
-                                <br/><br/>
+                                <br /><br />
                                 It was then submitted to the game jam through Itch.io
                             </p>
-                            <ItchLink link="https://codedcole.itch.io/mission-groundhog"/>
+                            <ItchLink link="https://codedcole.itch.io/mission-groundhog" />
                         </div>
                     </ProjectTile>
                     <ProjectTile projectName={'Portfolio'} largeIcon={tr_logo_large}>
                         <p>
                             Child Element
                         </p>
-                        <GitHubLink link="https://github.com/CodedCole/portfolio_site"/>
+                        <GitHubLink link="https://github.com/CodedCole/portfolio_site" />
                     </ProjectTile>
                 </section>
             </section>
