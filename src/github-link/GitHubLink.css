@@ -1,0 +1,34 @@
+.github-link {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    max-width: fit-content;
+
+    color: #FFFFFF;
+    text-decoration: none;
+
+    background-color:#111111;
+    border-radius: 10px;
+
+    transition: background-color 0.5s;
+}
+
+.light {
+    background-color:#CCCCCC;
+    color:#111111;
+}
+
+.github-link:hover {
+    background-color: #888888;
+}
+
+.github-link.light:hover {
+    background-color: #FFFFFF;
+}
+
+.github-icon {
+    min-width: 30px;
+    max-height: 30px;
+
+    margin-right: 10px;
+}

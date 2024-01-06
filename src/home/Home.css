@@ -1,0 +1,112 @@
+:root {
+    --backgroundColor: #111111;
+    --panelColor: #777777;
+    --darkAccentColor: #772211;
+    --brightAccentColor: #ff2211;
+
+    --panelTextColor: #FFFFFF;
+
+    background-color: #111111;
+}
+
+
+/* --- welcome box styles --- */
+#welcome-section {
+    background: linear-gradient(var(--darkAccentColor), var(--backgroundColor));
+    color: #FFFFFF;
+    text-shadow: #111111 2px 2px;
+    text-align: right;
+    padding: 50px;
+    margin: 0px;
+}
+
+#welcome-section h1,#welcome-section h2 {
+    margin: 0px;
+}
+
+#welcome-section h1 {
+    font-size: 5vmin;
+    padding-bottom: 0px;
+}
+
+#welcome-section h2 {
+    font-size: 3vmin;
+    padding-top: 5px;
+}
+
+/* --- background --- */
+#background {
+    background-color: var(--backgroundColor);
+    margin: 0px;
+    padding: 25px;
+}
+
+/* --- section styles --- */
+.panel {
+    background-color: var(--panelColor);
+    border-radius: 1vmin;
+    padding: 1vmin;
+    margin: 2vmin 0;
+}
+
+.panel h2 {
+    color: var(--panelTextColor);
+    font-size: 3vmin;
+    margin: 0;
+}
+
+p {
+    color: var(--panelTextColor);
+    font-size: 18px;
+    text-align: center;
+    margin: 8px 0 0 0;
+    padding: 10px 25px;
+}
+
+.in-text-link {
+    color: var(--brightAccentColor);
+}
+
+/* --- img tag styles --- */
+.pixel-img {
+    image-rendering: pixelated;
+}
+
+.screenshot {
+    max-width: calc(50% - 20px);
+    padding: 10px;
+}
+
+/* --- general project styles --- */
+h3 {
+    color: var(--panelTextColor);
+    font-size: 2vmin;
+    margin: 1vmin 0;
+}
+
+.side-by-side {
+    display: flex;
+}
+
+.side-by-side.reverse {
+    flex-direction: row-reverse;
+}
+
+.side-by-side div {
+    min-width: 50%;
+    margin: auto 0;
+}
+
+.github-link, .itch-link {
+    margin: auto;
+}
+
+/* --- Responsive Design --- */
+@media only screen and (max-width: 1200px) {
+    .side-by-side {
+        display: block;
+    }
+    .screenshot {
+        max-width: calc(80% - 20px);
+    }
+}

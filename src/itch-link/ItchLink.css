@@ -1,0 +1,25 @@
+.itch-link {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    max-width: fit-content;
+
+    color: #FFFFFF;
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: bold;
+
+    background-color:#111111;
+    border-radius: 10px;
+
+    transition: background-color 0.5s;
+}
+
+.itch-link:hover {
+    background-color: #888888;
+}
+
+.itch-icon {
+    max-height: 20px;
+    margin-left: 0.5em;
+}
